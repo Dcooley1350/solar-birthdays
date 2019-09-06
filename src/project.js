@@ -33,5 +33,9 @@ export class GalacticAges {
     this.ageVenus = Math.round((this.ageEarth/0.62*100))/100;
     return this.ageVenus;
   }
+  marsAge() {
+    this.ageMars = Math.round((this.ageEarth/1.88*100))/100;
+    return this.ageMars;
+  }
 
 }

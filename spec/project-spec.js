@@ -30,6 +30,8 @@ describe( 'VenusAge', function() {
 
 describe( 'MarsAge', function() {
   it('should test if the number returned is /1.88 the number entered', function () {
-    expect(true).toEqual(false);
+    const userAgeEarth = 21;
+    let newGalacticAges = new GalacticAges(userAgeEarth);
+    expect(newGalacticAges.marsAge()).toEqual(11.17);
   });
 });
