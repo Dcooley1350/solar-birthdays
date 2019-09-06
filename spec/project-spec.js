@@ -59,6 +59,8 @@ describe( 'EarthYearsLeft', function() {
 describe( 'MercuryYearsLeft', function(){
 
   it('should calculate the years the user has left on Mercury', function() {
-    expect(false).toEqual(true);
+    const earthYearsLeft = 55;
+    let newYearsLeft = new GalacticYearsLeft2Live(earthYearsLeft);
+    expect(newYearsLeft.mercuryYearsLeft()).toEqual(229.17);
   });
 });

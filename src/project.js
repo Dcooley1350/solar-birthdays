@@ -27,19 +27,19 @@ export class GalacticAges {
     this.ageJupiter= ageJupiter;
   }
   mercuryAge() {
-    this.ageMercury = Math.round((this.ageEarth/0.24*100))/100;
+    this.ageMercury = Math.round(this.ageEarth/0.24*100)/100;
     return this.ageMercury;
   }
   venusAge() {
-    this.ageVenus = Math.round((this.ageEarth/0.62*100))/100;
+    this.ageVenus = Math.round(this.ageEarth/0.62*100)/100;
     return this.ageVenus;
   }
   marsAge() {
-    this.ageMars = Math.round((this.ageEarth/1.88*100))/100;
+    this.ageMars = Math.round(this.ageEarth/1.88*100)/100;
     return this.ageMars;
   }
   jupiterAge() {
-    this.ageJupiter = Math.round((this.ageEarth/11.86*100))/100;
+    this.ageJupiter = Math.round(this.ageEarth/11.86*100)/100;
     return this.ageJupiter;
   }
 }
@@ -51,6 +51,10 @@ export class GalacticYearsLeft2Live {
     this.venusYearsLeft2Live = venusYearsLeft2Live;
     this.marsYearsLeft2Live = marsYearsLeft2Live;
     this.jupiterYearsLeft2Live = jupiterYearsLeft2Live;
+  }
+  mercuryYearsLeft(){
+    this.mercuryYearsLeft2Live = Math.round((this.earthYearsLeft2Live/0.24*100))/100;
+    return this.mercuryYearsLeft2Live;
   }
 
 }
