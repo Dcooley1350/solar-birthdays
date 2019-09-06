@@ -73,3 +73,10 @@ describe( 'VenusYearsLeft', function() {
     expect(newYearsLeft.venusYearsLeft()).toEqual(88.71);
   });
 });
+
+describe( 'MarsYearsLeft', function() {
+
+  it('should calculate the years a user has left on Mars', function(){
+    expect(true).toEqual(false);
+  });
+});
