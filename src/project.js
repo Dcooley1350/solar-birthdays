@@ -37,5 +37,8 @@ export class GalacticAges {
     this.ageMars = Math.round((this.ageEarth/1.88*100))/100;
     return this.ageMars;
   }
-
+  jupiterAge() {
+    this.ageJupiter = Math.round((this.ageEarth/11.86*100))/100;
+    return this.ageJupiter;
+  }
 }

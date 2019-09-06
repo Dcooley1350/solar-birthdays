@@ -39,6 +39,8 @@ describe( 'MarsAge', function() {
 describe( 'JupiterAge', function() {
 
   it('should test if the number returned is /11.86 the number entered', function () {
-    expect(true).toEqual(false);
+    const userAgeEarth = 21;
+    let newGalacticAges = new GalacticAges(userAgeEarth);
+    expect(newGalacticAges.jupiterAge()).toEqual(1.78);
   });
 });
