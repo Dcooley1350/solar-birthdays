@@ -77,6 +77,8 @@ describe( 'VenusYearsLeft', function() {
 describe( 'MarsYearsLeft', function() {
 
   it('should calculate the years a user has left on Mars', function(){
-    expect(true).toEqual(false);
+    const earthYearsLeft = 55;
+    let newYearsLeft = new GalacticYearsLeft2Live(earthYearsLeft);
+    expect(newYearsLeft.marsYearsLeft()).toEqual(29.26);
   });
 });

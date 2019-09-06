@@ -60,4 +60,8 @@ export class GalacticYearsLeft2Live {
     this.venusYearsLeft2Live = Math.round(this.earthYearsLeft2Live/0.62*100)/100;
     return this.venusYearsLeft2Live;
   }
+  marsYearsLeft(){
+    this.marsYearsLeft2Live = Math.round(this.earthYearsLeft2Live/1.88*100)/100;
+    return this.marsYearsLeft2Live;
+  }
 }
