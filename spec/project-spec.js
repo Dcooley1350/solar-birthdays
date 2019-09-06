@@ -35,3 +35,10 @@ describe( 'MarsAge', function() {
     expect(newGalacticAges.marsAge()).toEqual(11.17);
   });
 });
+
+describe( 'JupiterAge', function() {
+
+  it('should test if the number returned is /11.86 the number entered', function () {
+    expect(true).toEqual(false);
+  });
+});
