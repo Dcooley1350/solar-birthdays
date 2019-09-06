@@ -13,7 +13,10 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 | Spec                      |Input          | Output |
 |:---------------------------|:-------------|:------|
 |The application should only take a real age input.|"200", "-10"|"Please enter your age."|
-|The application should calculate Mercury Age| 10 | 2.4 |
+|The application should calculate Mercury Age.| 21 | 87.5 |
+|The application should calculate Venus Age.| 21 | 33.87 |
+|The application should calculate Mars Age.| 21 | 11.17 |
+|The application should calculate Jupiter Age. | 21 | 1.77 |
 
 ## Setup/Installation Requirements
 
