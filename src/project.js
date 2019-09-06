@@ -56,5 +56,8 @@ export class GalacticYearsLeft2Live {
     this.mercuryYearsLeft2Live = Math.round((this.earthYearsLeft2Live/0.24*100))/100;
     return this.mercuryYearsLeft2Live;
   }
-
+  venusYearsLeft(){
+    this.venusYearsLeft2Live = Math.round(this.earthYearsLeft2Live/0.62*100)/100;
+    return this.venusYearsLeft2Live;
+  }
 }
