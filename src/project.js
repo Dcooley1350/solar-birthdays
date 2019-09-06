@@ -43,3 +43,13 @@ export class GalacticAges {
     return this.ageJupiter;
   }
 }
+
+export class GalacticYearsLeft2Live {
+  constructor( earthYearsLeft2Live, mercuryYearsLeft2Live, venusYearsLeft2Live, marsYearsLeft2Live, jupiterYearsLeft2Live){
+    this.earthYearsLeft2Live = earthYearsLeft2Live;
+    this.mercuryYearsLeft2Live = mercuryYearsLeft2Live;
+    this.venusYearsLeft2Live = venusYearsLeft2Live;
+    this.marsYearsLeft2Live = marsYearsLeft2Live;
+    this.jupiterYearsLeft2Live = jupiterYearsLeft2Live;
+  }
+}

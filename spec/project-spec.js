@@ -51,6 +51,6 @@ describe( 'EarthYearsLeft', function() {
     const userAgeEarth = 21;
     const userLifeExpectancy = 76;
     let newUser = new User(userAgeEarth,userLifeExpectancy);
-    expect(newUser.earthYearsLeft()).toEqual(54);
+    expect(newUser.earthYearsLeft()).toEqual(55);
   });
 });
