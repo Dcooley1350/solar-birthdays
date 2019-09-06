@@ -82,3 +82,10 @@ describe( 'MarsYearsLeft', function() {
     expect(newYearsLeft.marsYearsLeft()).toEqual(29.26);
   });
 });
+
+describe( 'MarsYearsLeft', function() {
+
+  it('should calculate the years a user has left on Mars', function(){
+    expect(true).toEqual(false);
+  });
+});
