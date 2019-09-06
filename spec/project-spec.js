@@ -22,9 +22,8 @@ describe( 'MercuryAge', function() {
 describe( 'VenusAge', function() {
 
   it('should test if the number returned is 0.62* the number entered', function(){
-    expect(false).toEqual(true)
-    // const userAgeEarth = 10;
-    // let newGalacticAges = new GalacticAges(userAgeEarth);
-    // expect(newGalacticAges.venusAge()).toEqual(6.2);
+    const userAgeEarth = 10;
+    let newGalacticAges = new GalacticAges(userAgeEarth);
+    expect(newGalacticAges.venusAge()).toEqual(6.2);
   });
 });

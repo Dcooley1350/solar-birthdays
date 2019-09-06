@@ -29,4 +29,9 @@ export class GalacticAges {
     this.ageMercury = this.ageEarth*0.24;
     return this.ageMercury;
   }
+  venusAge() {
+    this.ageVenus = this.ageEarth*0.62;
+    return this.ageVenus;
+  }
+
 }
