@@ -1,3 +1,8 @@
 .output-panel {
   display: none;
 }
+
+#idiot {
+  display: none;
+  color: red;
+}
