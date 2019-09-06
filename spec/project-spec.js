@@ -83,9 +83,11 @@ describe( 'MarsYearsLeft', function() {
   });
 });
 
-describe( 'MarsYearsLeft', function() {
+describe( 'JupiterYearsLeft', function() {
 
-  it('should calculate the years a user has left on Mars', function(){
-    expect(true).toEqual(false);
+  it('should calculate the years a user has left on Jupiter', function(){
+    const earthYearsLeft = 55;
+    let newYearsLeft = new GalacticYearsLeft2Live(earthYearsLeft);
+    expect(newYearsLeft.jupiterYearsLeft()).toEqual(4.64);
   });
 });
