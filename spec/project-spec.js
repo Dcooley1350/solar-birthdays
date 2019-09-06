@@ -48,6 +48,9 @@ describe( 'JupiterAge', function() {
 describe( 'EarthYearsLeft', function() {
 
   it('should calculate the difference between age and life expectancy', function () {
-    expect(true).toEqual(false);
+    const userAgeEarth = 21;
+    const userLifeExpectancy = 76;
+    let newUser = new User(userAgeEarth,userLifeExpectancy);
+    expect(newUser.earthYearsLeft()).toEqual(54);
   });
 });

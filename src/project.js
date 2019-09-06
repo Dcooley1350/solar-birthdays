@@ -1,7 +1,8 @@
 export class User {
-  constructor(ageEarth, lifeExpectancy) {
+  constructor(ageEarth, lifeExpectancy, earthYearsLeft2Live) {
     this.ageEarth = ageEarth;
     this.lifeExpectancy = lifeExpectancy;
+    this.earthYearsLeft2Live = earthYearsLeft2Live;
   }
   realAge() {
     if(120>this.ageEarth && this.ageEarth> 0){
@@ -9,6 +10,10 @@ export class User {
     } else {
       return false;
     }
+  }
+  earthYearsLeft() {
+    this.earthYearsLeft2Live = this.lifeExpectancy - this.ageEarth;
+    return this.earthYearsLeft2Live
   }
 }
 
