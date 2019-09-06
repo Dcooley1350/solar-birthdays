@@ -26,11 +26,11 @@ export class GalacticAges {
     this.ageJupiter= ageJupiter;
   }
   mercuryAge() {
-    this.ageMercury = this.ageEarth*0.24;
+    this.ageMercury = Math.round((this.ageEarth/0.24*100))/100;
     return this.ageMercury;
   }
   venusAge() {
-    this.ageVenus = this.ageEarth*0.62;
+    this.ageVenus = Math.round((this.ageEarth/0.62*100))/100;
     return this.ageVenus;
   }
 

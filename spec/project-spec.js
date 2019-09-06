@@ -4,7 +4,7 @@ import { GalacticAges } from './../src/project.js';
 describe( 'RealAge', function() {
 
   it('should test if number entered is a real age', function() {
-    const userAge = 10
+    const userAge = 21
     let newUser = new User(userAge)
     expect(newUser.realAge()).toEqual(true);
   });
@@ -13,17 +13,17 @@ describe( 'RealAge', function() {
 describe( 'MercuryAge', function() {
 
   it('should test if the number returned is 0.24* the number entered', function(){
-    const userAgeEarth = 10;
+    const userAgeEarth = 21;
     let newGalacticAges = new GalacticAges(userAgeEarth);
-    expect(newGalacticAges.mercuryAge()).toEqual(2.4);
+    expect(newGalacticAges.mercuryAge()).toEqual(87.50);
   });
 });
 
 describe( 'VenusAge', function() {
 
   it('should test if the number returned is 0.62* the number entered', function(){
-    const userAgeEarth = 10;
+    const userAgeEarth = 21;
     let newGalacticAges = new GalacticAges(userAgeEarth);
-    expect(newGalacticAges.venusAge()).toEqual(6.2);
+    expect(newGalacticAges.venusAge()).toEqual(33.87);
   });
 });
