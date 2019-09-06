@@ -17,8 +17,13 @@ export class User {
 }
 
 
-
-
-
- // export class GalacticAges {
- //   constructor(ageMercury, ageVenus, ageMars, ageJupiter)
+export class GalacticAges {
+  constructor(ageEarth,ageMercury, ageVenus, ageMars, ageJupiter) {
+    this.ageEarth = ageEarth;
+    this.ageMercury = ageMercury;
+    this.ageVenus = ageVenus;
+    this.ageMars = ageMars;
+    this.ageJupiter= ageJupiter;
+  }
+  
+}
