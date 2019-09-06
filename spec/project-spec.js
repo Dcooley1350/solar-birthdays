@@ -13,9 +13,18 @@ describe( 'RealAge', function() {
 describe( 'MercuryAge', function() {
 
   it('should test if the number returned is 0.24* the number entered', function(){
-    let userAgeEarth = 10
+    const userAgeEarth = 10;
     let newGalacticAges = new GalacticAges(userAgeEarth);
-    console.log(newGalacticAges)
-    expect(newGalacticAges.mercuryAge()).toEqual(2.4)
+    expect(newGalacticAges.mercuryAge()).toEqual(2.4);
+  });
+});
+
+describe( 'VenusAge', function() {
+
+  it('should test if the number returned is 0.62* the number entered', function(){
+    expect(false).toEqual(true)
+    // const userAgeEarth = 10;
+    // let newGalacticAges = new GalacticAges(userAgeEarth);
+    // expect(newGalacticAges.venusAge()).toEqual(6.2);
   });
 });

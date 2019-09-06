@@ -27,6 +27,6 @@ export class GalacticAges {
   }
   mercuryAge() {
     this.ageMercury = this.ageEarth*0.24;
-    return this.ageMercury
+    return this.ageMercury;
   }
 }
