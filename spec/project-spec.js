@@ -44,3 +44,10 @@ describe( 'JupiterAge', function() {
     expect(newGalacticAges.jupiterAge()).toEqual(1.77);
   });
 });
+
+describe( 'EarthYearsLeft', function() {
+
+  it('should calculate the difference between age and life expectancy', function () {
+    expect(true).toEqual(false);
+  });
+});
