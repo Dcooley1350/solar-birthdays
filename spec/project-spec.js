@@ -1,5 +1,5 @@
 import { User } from './../src/project.js';
-import { GalacticAges}
+import { GalacticAges } from './../src/project.js';
 
 describe( 'RealAge', function() {
 
@@ -13,6 +13,9 @@ describe( 'RealAge', function() {
 describe( 'MercuryAge', function() {
 
   it('should test if the number returned is 0.24* the number entered', function(){
-    expect(true).toEqual(false)
-  }
-})
+    let userAgeEarth = 10
+    let newGalacticAges = new GalacticAges(userAgeEarth);
+    console.log(newGalacticAges)
+    expect(newGalacticAges.mercuryAge()).toEqual(2.4)
+  });
+});

@@ -25,5 +25,8 @@ export class GalacticAges {
     this.ageMars = ageMars;
     this.ageJupiter= ageJupiter;
   }
-  
+  mercuryAge() {
+    this.ageMercury = this.ageEarth*0.24;
+    return this.ageMercury
+  }
 }
