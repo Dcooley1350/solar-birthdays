@@ -17,6 +17,8 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 |The application should calculate Venus Age.| 21 | 33.87 |
 |The application should calculate Mars Age.| 21 | 11.17 |
 |The application should calculate Jupiter Age. | 21 | 1.77 |
+|The application should calculate the years the user has left to live on earth| Age:21 <\br> Life Expectancy: 76 | 56 |
+
 
 ## Setup/Installation Requirements
 
