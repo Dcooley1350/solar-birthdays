@@ -64,3 +64,10 @@ describe( 'MercuryYearsLeft', function(){
     expect(newYearsLeft.mercuryYearsLeft()).toEqual(229.17);
   });
 });
+
+describe( 'VenusYearsLeft', function() {
+
+  it('should calculate the years a user has left on Venus', function(){
+    expect(false).toEqual(true);
+  });
+});
