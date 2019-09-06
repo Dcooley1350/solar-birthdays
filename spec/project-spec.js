@@ -1,5 +1,6 @@
 import { User } from './../src/project.js';
 import { GalacticAges } from './../src/project.js';
+import { GalacticYearsLeft2Live } from './../src/project.js';
 
 describe( 'RealAge', function() {
 
@@ -52,5 +53,12 @@ describe( 'EarthYearsLeft', function() {
     const userLifeExpectancy = 76;
     let newUser = new User(userAgeEarth,userLifeExpectancy);
     expect(newUser.earthYearsLeft()).toEqual(55);
+  });
+});
+
+describe( 'MercuryYearsLeft', function(){
+
+  it('should calculate the years the user has left on Mercury', function() {
+    expect(false).toEqual(true);
   });
 });

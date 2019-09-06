@@ -13,7 +13,7 @@ export class User {
   }
   earthYearsLeft() {
     this.earthYearsLeft2Live = this.lifeExpectancy - this.ageEarth;
-    return this.earthYearsLeft2Live
+    return this.earthYearsLeft2Live;
   }
 }
 
@@ -52,4 +52,5 @@ export class GalacticYearsLeft2Live {
     this.marsYearsLeft2Live = marsYearsLeft2Live;
     this.jupiterYearsLeft2Live = jupiterYearsLeft2Live;
   }
+
 }
