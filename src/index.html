@@ -5,6 +5,32 @@
     <title>Project</title>
   </head>
   <body>
-    <h1>This is my project</h1>
+    <container>
+      <jumbotron>
+        <h1>Solar Age and Solar Years Left</h1>
+      </jumbotron>
+      <panel class="panel-info input-panel">
+        <form id="submit-info">
+          <div class="form-group">
+            <label for="age">Enter Age</label>
+            <input type="number"  class="form-control" id="age">
+          </div>
+          <div class="form-group">
+            <label for="life-expectancy">Enter Age</label>
+            <input type="number"  class="form-control" id="life-expectancy">
+          </div>
+        </form>
+      </panel>
+      <panel class="panel-info output-panel">
+        <h2>Your Solar Ages and Life Epectancies:</h2>
+          <ul>
+            <li><strong>Earth:</strong><i> Age: <span id="earth-age"</span>Years Left: <span id="earth-yl"</span></i></li>
+            <li><strong>Earth:</strong><i> Age: <span id="mercury-age"</span>Years Left: <span id="mercury-yl"</span></i></li>
+            <li><strong>Earth:</strong><i> Age: <span id="venus-age"</span>Years Left: <span id="venus-yl"</span></i></li>
+            <li><strong>Earth:</strong><i> Age: <span id="mars-age"</span>Years Left: <span id="mars-yl"</span></i></li>
+            <li><strong>Earth:</strong><i> Age: <span id="jupiter-age"</span>Years Left: <span id="jupiter-yl"</span></i></li>
+          </ul>
+      </panel>
+    </container>
   </body>
 </html>
