@@ -22,16 +22,20 @@ import { GalacticYearsLeft2Live } from './project.js';
 //   $("#output-panel").show();
 // }
 
-$(document).ready(function (){
-  $("#submit").submit(function(){
+$(document).ready(function(){
+  $("#submit-info").submit(function(event){
+    console.log("tacos");
+    event.preventDefault();
     $("#idiot").hide();
     let inputtedAge = $("#age").val();
     let inputtedLE = $("#life-expectancy").val();
     let newUser = new User(inputtedAge, inputtedLE);
     let newGalacticAge = new GalacticAges(inputtedAge);
-    let newGalacticYearsLeft2Live = new GalacticYearsLeft2Live;
-    if (newUser.realAge == true) {
+    let newGalacticYearsLeft2Live = new GalacticYearsLeft2Live();
+    const ageReal = newUser.realAge()
+    if (ageReal == true) {
       newUser.earthYearsLeft();
+      newGalacticYearsLeft2Live.earthYearsLeft2Live = newUser.earthYearsLeft2Live;
       newGalacticAge.mercuryAge();
       newGalacticAge.venusAge();
       newGalacticAge.marsAge();
@@ -40,9 +44,13 @@ $(document).ready(function (){
       newGalacticYearsLeft2Live.venusYearsLeft();
       newGalacticYearsLeft2Live.marsYearsLeft();
       newGalacticYearsLeft2Live.jupiterYearsLeft();
+      console.log(newGalacticYearsLeft2Live.earthYearsLeft2Live);
+      console.log(newGalacticYearsLeft2Live.jupiterYearsLeft());
+      console.log(newGalacticYearsLeft2Live.jupiterYearsLeft2Live)
+
       $("#earth-age").text(newUser.ageEarth);
       $("#earth-yl").text(newUser.earthYearsLeft2Live);
-      $("#mercury-age").text(newGalacticAge.agemercury);
+      $("#mercury-age").text(newGalacticAge.ageMercury);
       $("#mercury-yl").text(newGalacticYearsLeft2Live.mercuryYearsLeft2Live);
       $("#venus-age").text(newGalacticAge.ageVenus);
       $("#venus-yl").text(newGalacticYearsLeft2Live.venusYearsLeft2Live);

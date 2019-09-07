@@ -65,7 +65,7 @@ export class GalacticYearsLeft2Live {
     return this.marsYearsLeft2Live;
   }
   jupiterYearsLeft(){
-    this.JupiterYearsLeft2Live = Math.round(this.earthYearsLeft2Live/11.86*100)/100;
-    return this.JupiterYearsLeft2Live;
+    this.jupiterYearsLeft2Live = Math.round(this.earthYearsLeft2Live/11.86*100)/100;
+    return this.jupiterYearsLeft2Live;
   }
 }
