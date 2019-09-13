@@ -1,7 +1,7 @@
 export class User {
-  constructor() {
-    this.ageEarth;
-    this.lifeExpectancy;
+  constructor(ageEarth, userLifeExpectancy) {
+    this.ageEarth = ageEarth;
+    this.lifeExpectancy = userLifeExpectancy;
     this.earthYearsLeft2Live;
   }
   realAge() {
@@ -19,8 +19,8 @@ export class User {
 
 
 export class GalacticAges {
-  constructor() {
-    this.ageEarth;
+  constructor(ageEarth) {
+    this.ageEarth = ageEarth;
     this.ageMercury;
     this.ageVenus;
     this.ageMars;
@@ -41,8 +41,8 @@ export class GalacticAges {
 }
 
 export class GalacticYearsLeft2Live {
-  constructor(){
-    this.earthYearsLeft2Live;
+  constructor(earthYearsLeft2Live){
+    this.earthYearsLeft2Live = earthYearsLeft2Live;
     this.mercuryYearsLeft2Live;
     this.venusYearsLeft2Live;
     this.marsYearsLeft2Live;

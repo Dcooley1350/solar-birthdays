@@ -2,51 +2,12 @@ import { User } from './../src/project.js';
 import { GalacticAges } from './../src/project.js';
 import { GalacticYearsLeft2Live } from './../src/project.js';
 
-describe( 'RealAge', function() {
-
+describe( 'User', function() {
   it('should test if number entered is a real age', function() {
     const userAge = 21
     let newUser = new User(userAge)
     expect(newUser.realAge()).toEqual(true);
   });
-});
-
-describe( 'MercuryAge', function() {
-
-  it('should test if the number returned is /0.24 the number entered', function(){
-    const userAgeEarth = 21;
-    let newGalacticAges = new GalacticAges(userAgeEarth);
-    expect(newGalacticAges.mercuryAge()).toEqual(87.50);
-  });
-});
-
-describe( 'VenusAge', function() {
-
-  it('should test if the number returned is /0.62 the number entered', function(){
-    const userAgeEarth = 21;
-    let newGalacticAges = new GalacticAges(userAgeEarth);
-    expect(newGalacticAges.venusAge()).toEqual(33.87);
-  });
-});
-
-describe( 'MarsAge', function() {
-  it('should test if the number returned is /1.88 the number entered', function () {
-    const userAgeEarth = 21;
-    let newGalacticAges = new GalacticAges(userAgeEarth);
-    expect(newGalacticAges.marsAge()).toEqual(11.17);
-  });
-});
-
-describe( 'JupiterAge', function() {
-
-  it('should test if the number returned is /11.86 the number entered', function () {
-    const userAgeEarth = 21;
-    let newGalacticAges = new GalacticAges(userAgeEarth);
-    expect(newGalacticAges.jupiterAge()).toEqual(1.77);
-  });
-});
-
-describe( 'EarthYearsLeft', function() {
 
   it('should calculate the difference between age and life expectancy', function () {
     const userAgeEarth = 21;
@@ -56,38 +17,59 @@ describe( 'EarthYearsLeft', function() {
   });
 });
 
-describe( 'MercuryYearsLeft', function(){
+describe( 'GalacticAges', function() {
+  let userAgeEarth;
+  let newGalacticAges;
+  beforeEach( function () {
+    userAgeEarth = 21;
+    newGalacticAges = new GalacticAges(userAgeEarth);
+  });
+  it('should test if mercuryAge returns a number /0.24 the number entered', function(){
+    newGalacticAges.mercuryAge();
+    expect(newGalacticAges.ageMercury).toEqual(87.50);
+  });
+
+  it('venusAge function should test if the number returned is /0.62 the number entered', function(){
+    newGalacticAges.venusAge();
+    expect(newGalacticAges.ageVenus).toEqual(33.87);
+  });
+
+  it('marsAge function should test if the number returned is /1.88 the number entered', function () {
+    newGalacticAges.marsAge();
+    expect(newGalacticAges.ageMars).toEqual(11.17);
+  });
+
+  it('jupiterAge function should test if the number returned is /11.86 the number entered', function () {
+    newGalacticAges.jupiterAge();
+    expect(newGalacticAges.ageJupiter).toEqual(1.77);
+  });
+});
+
+describe( 'GalacticYearsLeft2Live', function(){
+  var newYearsLeft;
+  beforeEach(function() {
+    const earthYearsLeft = 55;
+    newYearsLeft = new GalacticYearsLeft2Live(earthYearsLeft);
+  });
 
   it('should calculate the years the user has left on Mercury', function() {
-    const earthYearsLeft = 55;
-    let newYearsLeft = new GalacticYearsLeft2Live(earthYearsLeft);
-    expect(newYearsLeft.mercuryYearsLeft()).toEqual(229.17);
+    newYearsLeft.mercuryYearsLeft();
+    expect(newYearsLeft.mercuryYearsLeft2Live).toEqual(229.17);
   });
-});
-
-describe( 'VenusYearsLeft', function() {
 
   it('should calculate the years a user has left on Venus', function(){
-    const earthYearsLeft = 55;
-    let newYearsLeft = new GalacticYearsLeft2Live(earthYearsLeft);
-    expect(newYearsLeft.venusYearsLeft()).toEqual(88.71);
+    newYearsLeft.venusYearsLeft();
+    expect(newYearsLeft.venusYearsLeft2Live).toEqual(88.71);
   });
-});
-
-describe( 'MarsYearsLeft', function() {
 
   it('should calculate the years a user has left on Mars', function(){
-    const earthYearsLeft = 55;
-    let newYearsLeft = new GalacticYearsLeft2Live(earthYearsLeft);
-    expect(newYearsLeft.marsYearsLeft()).toEqual(29.26);
+    newYearsLeft.marsYearsLeft();
+    expect(newYearsLeft.marsYearsLeft2Live).toEqual(29.26);
   });
-});
 
-describe( 'JupiterYearsLeft', function() {
 
   it('should calculate the years a user has left on Jupiter', function(){
-    const earthYearsLeft = 55;
-    let newYearsLeft = new GalacticYearsLeft2Live(earthYearsLeft);
-    expect(newYearsLeft.jupiterYearsLeft()).toEqual(4.64);
+    newYearsLeft.jupiterYearsLeft();
+    expect(newYearsLeft.jupiterYearsLeft2Live).toEqual(4.64);
   });
 });
